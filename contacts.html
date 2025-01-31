@@ -1,22 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
-    <header>
 
-<img src="images/logo.png" alt="" width="100">
-        <h1>FRESUNINS</h1>
-<nav>
-    <ul>
-        <li><a href="index.html">главная</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="oplata.html">Оплата и доставка</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-        <li><a href="corzina.html">Корзина</a></li>
-    </ul>
-</nav>
+<body>
+    <header class="header container">
+        <nav class="header__menu">
+            <ul class="menu">
+                <li class="menu__item">
+                    <a class="menu__link" href="index.html">ГЛАВНАЯ</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="catalog.html">КАТАЛОГ</a>
+                </li>
+                <li class="menu__item"> 
+                    <a class="menu__link" href="brend.html">О БРЕНДЕ</a>
+                </li>
+                <li class="menu__item">
+                    <a class="header__logo-wrap">
+                        <img class="header__logo" src="images/logo.png" alt="Логотип" width="80" height="80">
+                        <h1 class="header__title">FRESUNINS</h1>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="oplata.html">ОПЛАТА И ДОСТАВКА</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link menu__link--active" href="contacts.html">КОНТАКТЫ</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="corzina.html">КОРЗИНА</a>
+                </li>
+            </ul>
+        </nav>
     </header>
+    <main class="main container">
+        <section class="section hero">
+            <h2 class="visually-hidden">FRESUNINS</h2>
+            <img class="hero__image" src="images/kontacts.png" alt="Контакты" width="1440" height="800">
+        </section>
+        <section class="section connection">
+            <div class="connection__block">
+                <h2 class="connection__title">Обратная связь</h2>
+                <p class="connection__text">Если у Вас есть вопросы по заказу или пожелания по ассортименту, заполните
+                    форму ниже.</p>
+                <form class="popup__form form" action="/" method="post">
+                    <input class="form__field" type="name" name="name" placeholder="Имя" required>
+                    <input class="form__field" type="city" name="city" placeholder="Город" required>
+                    <input class="form__field" type="email" name="email" placeholder="E-mail*" required>
+                    <input class="form__field" type="message" name="message" placeholder="Сообщение" required>
+                    <button class="button" type="submit">Отправить</button>
+                </form>
+            </div>
+            <div class="connection__block">
+                <img class="connection__image" src="images/bear.jpg" alt="Медвежонок" width="720" height="800">
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+    <footer class="footer container">
+        <p class="footer__link">Зайцева Елизавета, группа СТ-22</p>
+        <ul class="footer__list">
+            <li class="footer__iten"><a class="footer__link" href="#">Контакты</a></li>
+            <li class="footer__iten"><a class="footer__link" href="#">Номер телефона</a></li>
+            <li class="footer__iten"><a class="footer__link" href="#">Ссылки на социальные сети</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+.footer {
+    background-color: rgba(173, 153, 128);
+}
+.footer__link {
+    text-decoration: none;
+    color: black;
+    font-family: "Merriweather","Times New Roman","Sarif";
+    font-weight: 500;
+
+}

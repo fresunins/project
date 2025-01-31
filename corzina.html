@@ -1,22 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
-    <header>
 
-<img src="images/logo.png" alt="" width="100">
-        <h1>FRESUNINS</h1>
-<nav>
-    <ul>
-        <li><a href="index.html">главная</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="oplata.html">Оплата и доставка</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-        <li><a href="corzina.html">Корзина</a></li>
-    </ul>
-</nav>
+<body>
+    <header class="header container">
+        <nav class="header__menu">
+            <ul class="menu">
+                <li class="menu__item">
+                    <a class="menu__link" href="index.html">ГЛАВНАЯ</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="catalog.html">КАТАЛОГ</a>
+                </li>
+                <li class="menu__item"> 
+                    <a class="menu__link" href="brend.html">О БРЕНДЕ</a>
+                </li>
+                <li class="menu__item">
+                    <a class="header__logo-wrap">
+                        <img class="header__logo" src="images/logo.png" alt="Логотип" width="80" height="80">
+                        <h1 class="header__title">FRESUNINS</h1>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="oplata.html">ОПЛАТА И ДОСТАВКА</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="contacts.html">КОНТАКТЫ</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link menu__link--active" href="corzina.html">КОРЗИНА</a>
+                </li>
+            </ul>
+        </nav>
     </header>

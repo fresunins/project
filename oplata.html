@@ -1,53 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
-    <header>
 
-<img src="images/logo.png" alt="" width="100">
-        <h1>FRESUNINS</h1>
-<nav>
-    <ul>
-        <li><a href="index.html">главная</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="oplata.html">Оплата и доставка</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-        <li><a href="corzina.html">Корзина</a></li>
-    </ul>
-</nav>
+<body>
+    <header class="header container">
+        <nav class="header__menu">
+            <ul class="menu">
+                <li class="menu__item">
+                    <a class="menu__link" href="index.html">ГЛАВНАЯ</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="catalog.html">КАТАЛОГ</a>
+                </li>
+                <li class="menu__item"> 
+                    <a class="menu__link" href="brend.html">О БРЕНДЕ</a>
+                </li>
+                <li class="menu__item">
+                    <a class="header__logo-wrap">
+                        <img class="header__logo" src="images/logo.png" alt="Логотип" width="80" height="80">
+                        <h1 class="header__title">FRESUNINS</h1>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link menu__link--active" href="oplata.html">ОПЛАТА И ДОСТАВКА</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="contacts.html">КОНТАКТЫ</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="corzina.html">КОРЗИНА</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <section>
-    <img src="images/o brende.jpg" alt="" width="1000">
-        </section>
-    <section>
-        <div>
-            <h1>Оплата</h1>
-            Оплата с любой банковской карты (Visa, Masterсard, Apple Pay, Google Pay)
-            Сумма минимального заказа на сайте — 250 р.
-            Ваш заказ мы пакуем и отправляем в течение 3-5 рабочих дней после получения оплаты.
-            Заказным письмам/бандеролям присваивается номер отправления (трек-номер), который мы высылаем на ваш email после отправки заказа. Обратите внимание, что доставка по России осуществляется до почтового отделения, к которому прикреплен адрес из вашей анкеты к заказу. 
-        </div>
-        <img src="images/o brende 1.jpg" alt="" width="400">
+<main class="main container">
+    <section class="section hero">
+            <h2 class="visually-hidden">FRESUNINS</h2>
+            <img class="hero__image" src="images/oplata dostavka.png" alt="Картинка о бренде" width="1440" height="800">
     </section>
-    <section>
-        <div>
-            <h2>Доставка</h2>
-            Заказное почтовое отправление по России — 175 руб.
-            Доставка СДЭК  (по России, а также в Беларусь и Казахстан) — стоимость рассчитывается  на сайте во время оформления заказа.
-            Сумма заказа свыше 1500 руб. (Почтой России) — Бесплатно
+    <section class="section payment">
+        <div class="payment__wrap-left">
+            <img class="payment__image" src="images/oplata.jpg" alt="Оплата" width="720" height="800">            
+        </div>
+        <div class="payment__wrap-right">
+            <h2 class="payment__title">Оплата</h2>
+            <p class="payment__text">Оплата с любой банковской карты (Visa, Masterсard, Apple Pay, Google Pay)</p>
+            <p class="payment__text">Сумма минимального заказа на сайте — 250 р.</p>
+            <p class="payment__text">Ваш заказ мы пакуем и отправляем в течение 3-5 рабочих дней после получения оплаты.</p>
+            <p class="payment__text">Заказным письмам/бандеролям присваивается номер отправления <br> (трек-номер), который мы высылаем на ваш email после отправки заказа. Обратите внимание,  что доставка по России осуществляется до <br> почтового отделения, к которому прикреплен адрес из вашей анкеты к заказу. </p>
         </div>
     </section>
-    <p>Зайцева Елизавета, СТ-22</p>
-    <ul>
-    <li><a href="#">Контакты</a></li>
-    <li><a href="#">Номер телефона</a></li>
-    <li><a href="#">Ссылки на социальные сети</a></li>
-    </ul>        
-        </footer>
-    </body>
-    </html>
+    <section class="section delivery">
+        <div class="delivery__wrap-left">
+            <img class="delivery__image" src="images/delivery.jpg" alt="Доставка" width="720" height="800">            
+        </div>
+        <div class="delivery__wrap-right">
+            <h2 class="delivery__title">Доставка</h2>
+            <p class="delivery__text">Заказное почтовое отправление по России — 175 руб.</p>
+            <p class="delivery__text">Доставка СДЭК  (по России, а также в Беларусь и Казахстан) <br> — стоимость рассчитывается  на сайте во время оформления заказа.</p>
+            <p class="delivery__text">Сумма заказа свыше 1500 руб. (Почтой России) — Бесплатно</p>
+        </div>
+    </section>
+</main>    
+<footer class="footer container">
+    <p class="footer__link">Зайцева Елизавета, группа СТ-22</p>
+    <ul class="footer__list">
+        <li class="footer__iten"><a class="footer__link" href="#">Контакты</a></li>
+        <li class="footer__iten"><a class="footer__link" href="#">Номер телефона</a></li>
+        <li class="footer__iten"><a class="footer__link" href="#">Ссылки на социальные сети</a></li>
+    </ul>      
+</footer>
+</body>
+</html>
