@@ -1,0 +1,39 @@
+@media (max-width: 1024px) {
+
+
+    /* Base.css */
+    html,
+    body {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    /* Typography.css */
+    .container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    /* Header.css */
+    .header {
+        padding: 20px 40px;
+
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1px;
+        list-style: none;
+    }
+
+    .connection__block {
+        padding: 10px;
+    }
+
+    .connection__image {
+        width: 520px;
+        height: 600px;
+    }
+}

@@ -8,3 +8,6 @@
 @import "footer.css";
 /* Подключение стилей относящихся к main */
 @import "main.css";
+
+/* Подключение стилей отвечающих за адаптив */
+@import "adaptability.css";

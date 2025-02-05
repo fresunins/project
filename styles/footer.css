@@ -1,10 +1,19 @@
 .footer {
-    background-color: rgba(173, 153, 128);
-}
-.footer__link {
-    text-decoration: none;
-    color: black;
-    font-family: "Merriweather","Times New Roman","Sarif";
-    font-weight: 500;
+    margin-top: 106px;
+    padding-top: 30px;
+    padding-bottom: 37px;
 
+    background-color: #ad9980;
+    
+}
+
+.footer__container {
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.footer__text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
 }
