@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    <header class="header container">
-        <nav class="header__menu">
+    <header class="header">
+        <nav class="header__container">
             <ul class="menu">
                 <li class="menu__item">
                     <a class="menu__link" href="index.html">ГЛАВНАЯ</a>
@@ -23,7 +23,7 @@
                     <a class="menu__link" href="brend.html">О БРЕНДЕ</a>
                 </li>
                 <li class="menu__item">
-                    <a class="header__logo-wrap">
+                    <a class="header__logo-link">
                         <img class="header__logo" src="images/logo.png" alt="Логотип" width="80" height="80">
                         <h1 class="header__title">FRESUNINS</h1>
                     </a>
@@ -56,6 +56,7 @@
                     <input class="form__field" type="email" name="email" placeholder="E-mail*" required>
                     <input class="form__field" type="message" name="message" placeholder="Сообщение" required>
                     <button class="button" type="submit">Отправить</button>
+                    <img class="form__star" src="images/star.jpg" alt="Звездочка" width="30" height="30">
                 </form>
             </div>
             <div class="connection__image">
@@ -70,7 +71,12 @@
             <p class="footer__text">Номер телефона</p>
             <p class="footer__text">Ссылки на социальные сети</p>
         </div>
+        <button class="scroll-up">↑</button>
     </footer>
+
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/scroll.js"></script>
+
 </body>
 
 </html>
