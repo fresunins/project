@@ -49,5 +49,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
         })
 
+
+
+            /* 2. Динамический вывод карточек тегов. Часть 1 (Используем массив с данными) */
+    const cardsContainer = document.querySelector('.product');
+
+    if (cardsContainer) {
+
+        const dataTitleCards = ['23', '23', '23', '23','23', '23', '23', '23','23'];
+
+        const titleCards = cardsContainer.querySelectorAll('.section__text');
+
+        // console.log(titleCards); // проверка в консоли
+
+        titleCards.forEach((item, index) => {
+            item.textContent = dataTitleCards[index] + " руб.";
+        });
+
+    }
     }
 });

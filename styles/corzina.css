@@ -1,0 +1,110 @@
+/* Общие стили */
+.corzina-container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #efeaea;
+    border-radius: 5px;
+}
+
+.corzina-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.corzina-info {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.corzina-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.corzina-table th,
+.corzina-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.corzina-table th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+}
+
+.product-item img {
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-controls button {
+    border: 1px solid #ccc;
+    background-color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.quantity-controls .quantity-display {
+    width: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 3px;
+    margin: 0 5px;
+}
+
+.remove-item {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.remove-item img {
+    vertical-align: middle;
+}
+
+.total-price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.delivery-options {
+    margin-bottom: 20px;
+}
+
+.delivery-options h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.delivery-option {
+    margin-bottom: 10px;
+}
+
+.delivery-option input[type="radio"] {
+    margin-right: 5px;
+}
+
+.delivery-option label {
+    cursor: pointer;
+}
+
+.delivery-option span {
+    margin-left: 10px;
+    color: #777;
+}

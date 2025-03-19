@@ -204,3 +204,47 @@
     visibility: visible;
 }
 
+.product-controls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.product-controls button,
+.product__button {
+    border: 1px solid #ccc;
+    background-color: rgba(174, 138, 108, 0.577);
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 0 2px; /* Отступы между элементами */
+}
+
+.product-controls .quantity-display {
+    width: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.buy-button {
+    background-color: #eff3ef; /* Зеленый */
+    border: none;
+    color: rgb(1, 1, 1);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 5px; /* Отступ между кнопкой "Купить" и контролами */
+}
+
+.buy-button:hover{
+    background-color: rgb(76, 175, 80);
+    border-radius: 5px;
+}

@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Корзина</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/corzina.css">
 </head>
 
 <body>
@@ -19,7 +20,7 @@
                 <li class="menu__item">
                     <a class="menu__link" href="catalog.html">КАТАЛОГ</a>
                 </li>
-                <li class="menu__item"> 
+                <li class="menu__item">
                     <a class="menu__link" href="brend.html">О БРЕНДЕ</a>
                 </li>
                 <li class="menu__item">
@@ -40,3 +41,84 @@
             </ul>
         </nav>
     </header>
+    <main class="main">
+        <section class="section">
+            <div class="corzina-container">
+                <h1 class="corzina-title">Корзина</h1>
+                <p class="corzina-info">
+                    Обратите внимание, минимальная сумма заказа 250 руб. Сумма погашенная промокодом не учитывается в
+                    минимальном заказе. Для совершения покупки добавьте в корзину товаров на
+                    <span id="min-sum-to-order">227</span> руб.
+                </p>
+
+                <table class="corzina-table">                        <tr>
+                            <td>
+                                <div class="product-item">
+                                    <img class="product" src="images/tovar13.jpg" alt="Полянка" width="300" height="300">
+                                    <span>«Полянка»</span>
+                                </div>
+                            </td>
+                            <td>23 руб.</td>
+                            <td>
+                                <div class="quantity-controls">
+                                    <button class="minus-button">-</button>
+                                    <span class="quantity-display">1</span>
+                                    <button class="plus-button">+</button>
+                                </div>
+                            </td>
+                            <td><span class="item-total">23</span> руб.</td>
+                            <td>
+                                <button class="remove-item">
+                                    <img src="" alt="Удалить" width="16" height="16">
+                                </button>
+                            </td>
+                        </tr>
+                        <!-- Пример добавленных товаров -->
+                    </tbody>
+                </table>
+
+                <p class="total-price">
+                    Общая стоимость заказа/покупки: <span id="total-price">23</span> руб.
+                </p>
+
+                <div class="delivery-options">
+                    <h2>Выберите способ доставки:</h2>
+                    <div class="delivery-option">
+                        <input type="radio" id="delivery-option-1" name="delivery-option" value="1" checked>
+                        <label for="delivery-option-1">Заказное почтовое отправление по России</label>
+                        <span>175 руб.</span>
+                    </div>
+                    <div class="delivery-option">
+                        <input type="radio" id="delivery-option-2" name="delivery-option" value="2">
+                        <label for="delivery-option-2">Доставка СДЭК (Россия, Беларусь, Казахстан)</label>
+                        <span>Стоимость зависит от города доставки</span>
+                    </div>
+                    <div class="delivery-option">
+                        <input type="radio" id="delivery-option-3" name="delivery-option" value="3">
+                        <label for="delivery-option-3">Оптовый заказ (рассчитывается отдельно)</label>
+                        <span>0 руб.</span>
+                    </div>
+                    <div class="delivery-option">
+                        <input type="radio" id="delivery-option-4" name="delivery-option" value="4">
+                        <label for="delivery-option-4">Электронный сертификат (только он в заказе)</label>
+                        <span>0 руб.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <button class="scroll-up">↑</button>
+    <footer class="footer">
+        <div class="footer__container container">
+            <p class="footer__text">Зайцева Елизавета, группа СТ-22</p>
+            <p class="footer__text">Контакты</p>
+            <p class="footer__text">Номер телефона</p>
+            <p class="footer__text">Ссылки на социальные сети</p>
+        </div>
+    </footer>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/scroll.js"></script>
+    <script src="./scripts/corzina.js"></script>
+</body>
+
+</html>
